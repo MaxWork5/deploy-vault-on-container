@@ -1,0 +1,5 @@
+---
+# vars file for Deployment_Image_on_Container
+
+Container_name: Vault
+Image_name: vault

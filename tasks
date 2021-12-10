@@ -1,0 +1,13 @@
+---
+# tasks file for Deployment_Image_on_Container
+  - name: Pull Image
+    docker_image:
+       name: "{{Image_name}}"
+       source: pull
+
+  - name: Create Docker container
+    docker_container:
+      name: "{{Container_name}}"
+      image: "{{Image_name}}"
+      state: started
+      
